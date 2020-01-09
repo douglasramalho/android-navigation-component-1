@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Common -->
+    <string name="common_next">Next</string>
+    <string name="common_finish">Finish</string>
+
+    <!-- Start Fragment -->
+    <string name="start_action_bar_title">Start</string>
+    <string name="start_button_text_start">Start</string>
+
+    <!-- Profile Fragment -->
+    <string name="profile_action_bar_title">Profile</string>
+    <string name="profile_text_welcome">Welcome, %1$s</string>
+
+    <!-- Login Fragment -->
+    <string name="login_action_bar_title">Login</string>
+    <string name="login_input_layout_hint_username">Username</string>
+    <string name="login_input_layout_hint_password">Password</string>
+    <string name="login_button_text_sign_in">Sign in</string>
+    <string name="login_button_text_sign_up">Sign up</string>
+    <string name="login_input_layout_error_invalid_username">Invalid username</string>
+    <string name="login_input_layout_error_invalid_password">Invalid password</string>
+
+    <!-- Profile Data -->
+    <string name="profile_data_action_bar_title">Profile Data</string>
+    <string name="profile_data_input_layout_hint_name">Name</string>
+    <string name="profile_data_input_layout_hint_bio">Bio</string>
+    <string name="profile_data_input_layout_error_invalid_name">Invalid name</string>
+    <string name="profile_data_input_layout_error_invalid_bio">Invalid bio</string>
+
+    <!-- Choose Credentials -->
+    <string name="choose_credentials_action_bar_title">Choose Credentials</string>
+    <string name="choose_credentials_input_layout_hint_username">Username</string>
+    <string name="choose_credentials_input_layout_hint_password">Password</string>
+    <string name="choose_credentials_input_layout_error_invalid_username">Invalid username</string>
+    <string name="choose_credentials_input_layout_error_invalid_password">Invalid password</string>
+    <string name="choose_credentials_text_name">%1$s, choose your credentials</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_app"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="br.com.douglasmotta.naivagtioncomponentappmirror.ui.start.StartFragment"
+        android:label="@string/start_action_bar_title"
+        tools:layout="@layout/fragment_start">
+
+        <action
+            android:id="@+id/action_startFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="br.com.douglasmotta.naivagtioncomponentappmirror.ui.profile.ProfileFragment"
+        android:label="@string/profile_action_bar_title"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="br.com.douglasmotta.naivagtioncomponentappmirror.ui.login.LoginFragment"
+        android:label="@string/login_action_bar_title"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_navigation"
+            app:destination="@id/nav_graph_registration" />
+    </fragment>
+
+    <navigation
+        android:id="@+id/nav_graph_registration"
+        app:startDestination="@id/profileDataFragment">
+        <fragment
+            android:id="@+id/profileDataFragment"
+            android:name="br.com.douglasmotta.naivagtioncomponentappmirror.ui.registration.profiledata.ProfileDataFragment"
+            android:label="@string/profile_data_action_bar_title"
+            tools:layout="@layout/fragment_profile_data">
+            <action
+                android:id="@+id/action_profileDataFragment_to_chooseCredentialsFragment"
+                app:destination="@id/chooseCredentialsFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/chooseCredentialsFragment"
+            android:name="br.com.douglasmotta.naivagtioncomponentappmirror.ui.registration.choosecredentials.ChooseCredentialsFragment"
+            android:label="@string/choose_credentials_action_bar_title"
+            tools:layout="@layout/fragment_choose_credentials">
+
+            <argument
+                android:name="name"
+                app:argType="string"
+                app:nullable="false" />
+
+        </fragment>
+    </navigation>
+</navigation>

@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="buttonStyle">@style/AppButton</item>
+    </style>
+
+    <style name="AppButton" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <style name="AppButton.SignUp">
+        <item name="android:background">@color/blue</item>
+    </style>
+
+    <style name="AppTextInputLayout" parent="Widget.Design.TextInputLayout">
+        <item name="android:background">@color/grey</item>
+    </style>
+
+</resources>
