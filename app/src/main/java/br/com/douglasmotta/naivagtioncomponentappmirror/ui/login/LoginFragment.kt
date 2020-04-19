@@ -107,7 +107,6 @@ class LoginFragment : Fragment() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         cancelAuthentication()
-        WeakReference
         return true
     }
 
