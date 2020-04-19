@@ -1,5 +1,6 @@
 package br.com.douglasmotta.naivagtioncomponentappmirror.ui.start
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,6 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
+import br.com.douglasmotta.naivagtioncomponentappmirror.MainActivity
+import br.com.douglasmotta.naivagtioncomponentappmirror.MyApp
 
 import br.com.douglasmotta.naivagtioncomponentappmirror.R
 import br.com.douglasmotta.naivagtioncomponentappmirror.extensions.navigateWithAnimations

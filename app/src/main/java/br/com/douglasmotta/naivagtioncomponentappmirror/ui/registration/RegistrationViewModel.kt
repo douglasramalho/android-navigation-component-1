@@ -4,8 +4,9 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import br.com.douglasmotta.naivagtioncomponentappmirror.R
+import javax.inject.Inject
 
-class RegistrationViewModel : ViewModel() {
+class RegistrationViewModel @Inject constructor() : ViewModel() {
 
     sealed class RegistrationState {
         object CollectProfileData :  RegistrationState()

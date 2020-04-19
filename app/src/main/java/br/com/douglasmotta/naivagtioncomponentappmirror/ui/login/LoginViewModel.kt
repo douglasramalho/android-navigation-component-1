@@ -4,8 +4,10 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import br.com.douglasmotta.naivagtioncomponentappmirror.R
+import br.com.douglasmotta.naivagtioncomponentappmirror.data.Repository
+import javax.inject.Inject
 
-class LoginViewModel : ViewModel() {
+class LoginViewModel @Inject constructor(private val repository: Repository) : ViewModel() {
 
     sealed class AuthenticationState {
         object Unauthenticated : AuthenticationState()
@@ -37,6 +39,7 @@ class LoginViewModel : ViewModel() {
     fun authenticate(username: String, password: String) {
         if (isValidForm(username, password)) {
             this.username = username
+            repository.doLogin()
             _authenticationStateEvent.value = AuthenticationState.Authenticated
         }
     }
