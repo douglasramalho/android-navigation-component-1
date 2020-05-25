@@ -3,6 +3,7 @@ package br.com.douglasmotta.naivagtioncomponentappmirror.ui.login
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
 import br.com.douglasmotta.naivagtioncomponentappmirror.R
 import br.com.douglasmotta.naivagtioncomponentappmirror.data.Repository
 import javax.inject.Inject
